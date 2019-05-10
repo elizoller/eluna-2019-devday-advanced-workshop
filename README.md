@@ -25,9 +25,9 @@ docker pull quay.io/nyulibraries/eluna-2019-devday-advanced-workshop:e2e
       ```sh
       # The 'up' command will deploy any dependent services,
       # and run with the service's ports enabled and mapped to the host.
-      docker-compose up web
+      VIEW=01ASU docker-compose up web
       ```
-1. Navigate to `http://localhost:8003/primo-explore/search?vid=NYU` to see the basic VIEW up and running!
+1. Navigate to `http://localhost:8003/primo-explore/search?vid=01ASU` to see the basic VIEW up and running!
 
 ### Making changes using volumes
 
@@ -43,13 +43,13 @@ services:
 
 The gulp process will therefore dynamically respond to changes in the files in the local filesystem, which are reflected in the container and re-run there. To test that this is working, change some files and watch the page refresh and reflect those changes. For example:
 
-`NYU/main.js`
+`01ASU/main.js`
 ```js
 app.run(() => {
   console.log('hello from the main.js!');
 });
 ```
-`NYU/scss/main.scss`
+`01ASU/scss/main.scss`
 ```scss
 p {
   color: red;
@@ -64,7 +64,7 @@ Now, creating a Primo frontend package is as simple. And Docker containers will 
 VIEW=[VIEW] docker-compose run create-package
 ```
 
-For now, the `VIEW` value can be either `NYU` or `CENTRAL_PACKAGE`. You will see the package output in the `packages` directory as `[VIEW].zip`.
+For now, the `VIEW` value can be either `01ASU` or `CENTRAL_PACKAGE`. You will see the package output in the `packages` directory as `[VIEW].zip`.
 
 ### Other requirements
 

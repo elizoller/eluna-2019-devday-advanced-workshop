@@ -10,8 +10,8 @@ services:
       - quay.io/nyulibraries/eluna-2019-devday-advanced-workshop:latest
     image: primo-explore-eluna-workshop
     environment:
-      PROXY_SERVER: http://bobcatdev.library.nyu.edu:80
-      VIEW: ${VIEW-NYU}
+      PROXY_SERVER: https://arizona-asu-primosb.hosted.exlibrisgroup.com:443
+      VIEW: ${VIEW-ASU}
     ports:
     - 8003:8003
     - 3001:3001
@@ -27,8 +27,8 @@ services:
       - quay.io/nyulibraries/eluna-2019-devday-advanced-workshop:latest
     image: primo-explore-eluna-workshop
     environment:
-      PROXY_SERVER: http://bobcatdev.library.nyu.edu:80
-      VIEW: ${VIEW-NYU}
+      PROXY_SERVER: https://arizona-asu-primosb.hosted.exlibrisgroup.com:443
+      VIEW: ${VIEW-ASU}
     ports:
     - 8003:8003
     - 3001:3001
@@ -48,5 +48,5 @@ services:
     - web
     environment:
       DOMAIN: http://web:8003/primo-explore/search
-      VIEW: ${VIEW-NYU}
+      VIEW: ${VIEW-ASU}
       CYPRESS_BASE_URL: http://web:8003/primo-explore/
