@@ -1,0 +1,21 @@
+button.lib-chat {
+    background-color: #8C1D40;
+    color: #FFFFFF;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* If width <= 680 && width >= 600, hide Chat button.  Yes, this isn't
+  ideal, but it solves the problem of the Chat button hiding the Sign in
+  button fo for those particular screen widths.  This is probably ok, since
+  it is unlikely anybody would want to use Chat on such a small screen
+  (likely mobile) since the chat screen would take over their entire screen.
+*/
+
+@media (min-width: 600px) and (max-width: 680px) 
+{
+  button.lib-chat {
+    display: none;
+  }
+}
