@@ -21,7 +21,9 @@ import { PrmSearchBookmarkFilterAfterConfig } from './prmSearchBookmarkFilterAft
 import '@orbis-cascade/primo-explore-custom-actions';
 
 import 'primo-explore-hathitrust-availability';
-import { browzineNodeServer } from './browzineNodeServer.constant';
+import 'primo-explore-browzine';
+import './browzineLoader';
+import 'primo-explore-unpaywall';
 import { PrmSearchResultAvailabilityLineAfterConfig } from './prmSearchResultAvailabilityLineAfter.component'
 import { PrmSearchResultListAfterConfig } from './prmSearchResultListAfter.component'
 import { PrmSearchResultThumbnailContainerAfterConfig } from './prmSearchResultThumbnailContainerAfter.component';
@@ -38,15 +40,14 @@ console.log(`${inst} customizations version: ${version}, view id: ${vid}`);
 /*global angular */
 // define angularjs module */
 angular.module('viewCustom', [
-  'ngIdle', 'angularLoad', 'angularLoadMonkeyPatched', 'ngMaterial', 'hathiTrustAvailability', 'customActions']);
-
-// whitelist URL of Browzine server that hosts node.js script
-angular.module('viewCustom')
-  .config(['$sceDelegateProvider', function ($sceDelegateProvider) {
-    var urlWhitelist = $sceDelegateProvider.resourceUrlWhitelist();
-    urlWhitelist.push(browzineNodeServer + '**');
-    $sceDelegateProvider.resourceUrlWhitelist(urlWhitelist);
-  }]);
+  'ngIdle', 'angularLoad', 'angularLoadMonkeyPatched', 'ngMaterial', 'hathiTrustAvailability', 'customActions', 'browzineMod', 'bulibUnpaywall']).constant('unpaywallConfig', {
+    "email": "ezoller@asu.edu",
+    "showOnResultsPage": true,
+    "showVersionLabel": true,
+    "logToConsole": true,
+    "showDebugTable": false,
+    "publishEvents": true
+  });
 
 angular.module('viewCustom')
   .value('searchTargets', searchTargets)
@@ -96,7 +97,6 @@ angular.module('viewCustom')
       },
     },
   })
-
 
 angular.module('viewCustom')
   .run(['$rootScope', ($rootScope) => {

@@ -9,7 +9,7 @@ export class ExternalSearchService {
   get controller() {
     return this.prmFacetCtrl || false;
   }
-  
+
   set controller(controller) {
     this.prmFacetCtrl = controller;
   }
@@ -17,15 +17,19 @@ export class ExternalSearchService {
   addExtSearch() {
     if (this.prmFacetCtrl.facetService &&
       this.prmFacetCtrl.facetService.results &&
-      this.prmFacetCtrl.facetService.results[0] &&
-      this.prmFacetCtrl.facetService.results[0].name !== 'External Search') {
-      this.prmFacetCtrl.facetService.results.unshift({
+      this.prmFacetCtrl.facetService.results[1] &&
+      this.prmFacetCtrl.facetService.results[1].name !== 'External Search') {
+      let firstfac = this.prmFacetCtrl.facetService.results[0]
+      let extsearchfac = {
         name: 'External Search',
         displayedType: 'exact',
         limitCount: 0,
         facetGroupCollapsed: false,
         values: undefined
-      })
+      }
+      this.prmFacetCtrl.facetService.results.unshift(extsearchfac);
+      this.prmFacetCtrl.facetService.results[0] = firstfac;
+      this.prmFacetCtrl.facetService.results[1] = extsearchfac;
     }
   }
 
