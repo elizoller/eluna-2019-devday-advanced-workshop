@@ -10,7 +10,7 @@ services:
       - quay.io/nyulibraries/eluna-2019-devday-advanced-workshop:latest
     image: primo-explore-eluna-workshop
     environment:
-      PROXY_SERVER: https://arizona-asu-primosb.hosted.exlibrisgroup.com:443
+      PROXY_SERVER: https://search.lib.asu.edu:443
       VIEW: ${VIEW-ASU}
     ports:
     - 8003:8003
@@ -27,7 +27,7 @@ services:
       - quay.io/nyulibraries/eluna-2019-devday-advanced-workshop:latest
     image: primo-explore-eluna-workshop
     environment:
-      PROXY_SERVER: https://arizona-asu-primosb.hosted.exlibrisgroup.com:443
+      PROXY_SERVER: https://search.lib.asu.edu:443
       VIEW: ${VIEW-ASU}
     ports:
     - 8003:8003
