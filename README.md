@@ -83,3 +83,10 @@ cypress open
 
 ### More resources
 * [Adding an NPM dependency](https://github.com/NYULibraries/eluna-2019-devday-advanced-workshop/tree/master/.docs/add-npm.md)
+
+
+### To run the tests
+1. boot up your docker from the root of this project, like `VIEW=01ASU docker-compose up web`
+2. cd into e2e-cypress directory
+3. `yarn install`
+4. `yarn cypress open`
