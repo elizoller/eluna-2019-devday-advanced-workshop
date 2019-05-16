@@ -1,4 +1,4 @@
-describe('searchbar', () => {
+describe('asu customizations', () => {
   before(() => {
     cy.visit('/search?vid=01ASU', {
       onBeforeLoad(win) {
@@ -7,50 +7,49 @@ describe('searchbar', () => {
     });
   })
 
-  describe('scopes and search bar modifications', () => {
-    // it('exists', () => {
-    //   cy.get('search-bar-sub-menu').should('exist')
-    // })
 
-    // it('is visible', () => {
-    //   cy.get('.search-bar-sub-menu').should('be.visible');
-    // })
-
-    describe('scopes as radio buttons', () => {
-      // const submenuItems = [
-      //   {
-      //     label: "Provide Feedback",
-      //     link: "https://nyu.qualtrics.com/jfe/form/SV_blQ3OFOew9vl6Pb?Source=NYU",
-      //   },
-      //   {
-      //     label: "Library Hours",
-      //     link: "https://guides.nyu.edu/library-hours",
-      //   }
-      // ]
-
-      it(`four scope radio buttons`, () => {
-        cy.get('#searchProfileRadios md-radio-button').should('have.length', 4)
-      })
-
-      // submenuItems.forEach(({ label, link }, idx) => {
-      //   it(`has a button with ${label} which opens ${link} when clicked`, () => {
-      //     cy.window().then(win => {
-      //       const spy = cy.stub(win, 'open')
-
-      //       cy.get('.search-bar-sub-menu-item').contains(label).click().then($el => {
-      //         expect(spy).to.be.calledWith(link);
-      //       })
-      //       // OR BELOW, idx is like the id
-      //       cy.get('search-bar-sub-menu button')
-      //         .eq(idx)
-      //         .should('contain', label)
-      //         .click('center')
-      //         .then(() => {
-      //           expect(spy).to.be.calledWith(link)
-      //         })
-      //     })
-      //   })
-      // })
+  describe('scopes as radio buttons', () => {
+    it(`should have four scope radio buttons`, () => {
+      cy.get('#searchProfileRadios md-radio-button').should('have.length', 4)
     })
-  })
+  });
+
+  describe('dropdown for search index', () => {
+    it(`should have the md-select`, () => {
+      cy.get('#indexSelect').should('exist');
+    });
+
+    it(`should have the three options`, () => {
+      cy.get('#indexSelect').click().then($el => {
+        cy.get('#select_container_60 md-option').should('have.length', 3);
+        const index_options = ['keyword', 'title', 'author']
+        index_options.forEach((ind, idx) => {
+          cy.get('#select_container_60 md-option').contains(ind).should('exist');
+          if (idx == 2){
+            cy.get('#select_container_60 md-option').contains(ind).click();
+          }
+        })
+      })
+    });
+  });
+
+
+  describe('external search facet', () => {
+    it(`should have external search facet section`, () => {
+      cy.get('#searchBar')
+        .type('science{enter}')
+      cy.url().should('include', 'science')
+      cy.get(`[id^='SEARCH_RESULT_RECORDID_']`)
+        .first()
+        .then($el => {
+          expect($el.text().length).to.be.at.least(1)
+        });
+      cy.get('#facets').should('exist');
+      cy.get('.available-facets').should('have.length', 14)
+      cy.get('h3.section-title-header').contains('External Search').should('exist');
+    })
+  });
+
+
+
 })
