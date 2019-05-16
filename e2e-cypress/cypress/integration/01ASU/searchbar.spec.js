@@ -38,6 +38,7 @@ describe('asu customizations', () => {
 
   describe('dropdown for search index', () => {
     it(`should have the md-select`, () => {
+      cy.get('button[aria-label="Clear search text"]').click()
       cy.get('#indexSelect').should('exist');
     });
 
@@ -64,6 +65,7 @@ describe('asu customizations', () => {
 
   describe('external search facet', () => {
     it(`should have external search facet section`, () => {
+      cy.get('button[aria-label="Clear search text"]').click()
       cy.get('#searchBar')
         .type('science{enter}')
       cy.url().should('include', 'science')
