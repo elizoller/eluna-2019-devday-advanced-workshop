@@ -13,9 +13,26 @@ describe('asu customizations', () => {
     { ind: 'keyword', urlt: 'any,contains' }
   ]
 
+  const scope_options = [
+    { svalue: 'ebsco', urlp: 'tab=ebsco&search_scope=EBSCO'},
+    { svalue: 'course_reserves', urlp: 'tab=course_reserves&search_scope=Course_Reserves'},
+    { svalue: 'books', urlp: 'tab=books&search_scope=default_scope'},
+    { svalue: 'default_tab', urlp: 'tab=default_tab&search_scope=Everything' }
+  ]
+
   describe('scopes as radio buttons', () => {
     it(`should have four scope radio buttons`, () => {
       cy.get('#searchProfileRadios md-radio-button').should('have.length', 4)
+    })
+
+    it(`should actually change the scope when you click a radio button`, () => {
+      cy.get('#searchBar')
+        .type('science{enter}')
+      scope_options.forEach(({ svalue, urlp }, idx) => {
+        cy.get('md-radio-button[value="' + svalue + '"]').click().then($el => {
+          cy.url().should('include', urlp)
+        })
+      });
     })
   });
 
