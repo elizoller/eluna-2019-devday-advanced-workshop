@@ -7,6 +7,11 @@ describe('asu customizations', () => {
     });
   })
 
+  const index_options = [
+    { ind: 'title', urlt: 'title,contains' },
+    { ind: 'author', urlt: 'creator,contains' },
+    { ind: 'keyword', urlt: 'any,contains' }
+  ]
 
   describe('scopes as radio buttons', () => {
     it(`should have four scope radio buttons`, () => {
@@ -21,16 +26,22 @@ describe('asu customizations', () => {
 
     it(`should have the three options`, () => {
       cy.get('#indexSelect').click().then($el => {
-        cy.get('#select_container_60 md-option').should('have.length', 3);
-        const index_options = ['keyword', 'title', 'author']
-        index_options.forEach((ind, idx) => {
-          cy.get('#select_container_60 md-option').contains(ind).should('exist');
-          if (idx == 2){
-            cy.get('#select_container_60 md-option').contains(ind).click();
-          }
+        cy.get('._md-select-menu-container._md-clickable._md-active md-option').should('have.length', 3);
+
+        index_options.forEach(({ind, urlt}, idx) => {
+          cy.get('._md-select-menu-container._md-clickable._md-active md-option').contains(ind).should('exist');
         })
       })
     });
+
+    it(`should have the correct option preselected when visiting the search url`, () => {
+      index_options.forEach(({ ind, urlt }, idx) => {
+        cy.visit("/search?vid=01ASU&query="+urlt+",potter");
+        cy.get("#indexSelect md-select-value").contains(ind).should('exist');
+      });
+    });
+
+    // can't test that clicking the dropdown actually changes the search because the window.postMessage functionality that makes this work is not working within cypress
   });
 
 
