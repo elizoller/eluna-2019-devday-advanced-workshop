@@ -91,6 +91,7 @@ describe('asu customizations', () => {
 
   describe('sms call number/twilio integration', () => {
     before(() => {
+      cy.get(`#facets`).click({ force: true })
       cy.get('button[aria-label="Clear search text"]').click()
       cy.get('#searchBar')
         .type('frogs{enter}')
@@ -102,13 +103,12 @@ describe('asu customizations', () => {
         .first()
         .then($el => {
           expect($el.text().length).to.be.at.least(1)
+          cy.get(`#facets`).click({ force: true })
+          cy.get(`#briefResultMoreOptionsButton`)
+            .click();
+          cy.get(`prm-action-list .button-text`).should('contain', 'Text Me');
         });
-      cy.get(`#facets`).click({force: true})
-      cy.get(`[id ^= 'SEARCH_RESULT_RECORDID_']`)
-        .first()
-        .get(`#briefResultMoreOptionsButton`)
-        .click();
-      cy.get(`prm-action-list .button-text`).should('contain', 'Text Me');
+
     });
 
     it('should have a twilio button in the full results', () => {
