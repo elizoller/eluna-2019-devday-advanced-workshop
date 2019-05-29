@@ -8,13 +8,6 @@ describe('searchbar', () => {
   })
 
   describe('scopes and search bar modifications', () => {
-    // it('exists', () => {
-    //   cy.get('search-bar-sub-menu').should('exist')
-    // })
-
-    // it('is visible', () => {
-    //   cy.get('.search-bar-sub-menu').should('be.visible');
-    // })
 
     describe('scopes as radio buttons', () => {
       // const submenuItems = [
