@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 mkdir -p packages
-VIEWS='01ASU CENTRAL_PACKAGE'
+VIEWS='01ASU'
 
 for VIEW in $VIEWS
 do

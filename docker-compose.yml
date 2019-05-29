@@ -11,7 +11,7 @@ services:
     image: primo-explore-eluna-workshop
     environment:
       PROXY_SERVER: https://search.lib.asu.edu:443
-      VIEW: ${VIEW-ASU}
+      VIEW: 01ASU
     ports:
     - 8003:8003
     - 3001:3001
@@ -28,7 +28,7 @@ services:
     image: primo-explore-eluna-workshop
     environment:
       PROXY_SERVER: https://search.lib.asu.edu:443
-      VIEW: ${VIEW-ASU}
+      VIEW: 01ASU
     ports:
     - 8003:8003
     - 3001:3001
@@ -48,5 +48,5 @@ services:
     - web
     environment:
       DOMAIN: http://web:8003/primo-explore/search
-      VIEW: ${VIEW-ASU}
+      VIEW: 01ASU
       CYPRESS_BASE_URL: http://web:8003/primo-explore/
