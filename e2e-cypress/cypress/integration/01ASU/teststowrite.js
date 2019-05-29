@@ -1,5 +1,4 @@
 // Stop redirect on logout(prmExploreMainAfterComponent)
-// Make icon logo clickable(keep b / c we like the big logo)
 // Add request options tooltip
 // Move the search tips
 // Add browzine links(also adds thumbnail)
