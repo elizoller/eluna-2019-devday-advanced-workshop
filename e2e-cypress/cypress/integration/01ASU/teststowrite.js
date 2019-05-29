@@ -4,5 +4,3 @@
 // Add browzine links(also adds thumbnail)
 // Add hathitrust links
 // Add alert banner for temporary outage messages
-// FRBR search - banner for displaying previously selected facets
-
