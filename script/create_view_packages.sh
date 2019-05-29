@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 mkdir -p packages
-VIEWS='NYU CENTRAL_PACKAGE'
+VIEWS='01ASU'
 
 for VIEW in $VIEWS
 do

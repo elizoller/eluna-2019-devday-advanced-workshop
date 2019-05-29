@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 mkdir -p cypress-results
-VIEWS='NYU CENTRAL_PACKAGE'
+VIEWS='01ASU'
 
 for VIEW in $VIEWS
 do
