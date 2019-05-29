@@ -1,6 +1,5 @@
 // Add lib chat button in upper right
 // Stop redirect on logout(prmExploreMainAfterComponent)
-// Add expand my results tooltip
 // Make icon logo clickable(keep b / c we like the big logo)
 // Add request options tooltip
 // Move the search tips
