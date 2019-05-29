@@ -7,8 +7,8 @@ describe('asu customizations', () => {
       });
     })
   
-    describe('external search facet', () => {
-      it(`should have external search facet section`, () => {
+    describe('expand results tooltip', () => {
+      it(`should have the results button and be clickable`, () => {
         cy.get('#searchBar')
           .type('science{enter}')
         cy.url().should('include', 'science')
