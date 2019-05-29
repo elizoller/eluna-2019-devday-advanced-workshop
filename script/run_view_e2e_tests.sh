@@ -2,6 +2,7 @@
 
 mkdir -p cypress-results
 VIEWS='01ASU'
+curl http://web:8003/primo-explore/search?vid=01ASU
 
 for VIEW in $VIEWS
 do
