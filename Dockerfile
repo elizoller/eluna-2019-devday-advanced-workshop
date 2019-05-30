@@ -17,8 +17,7 @@ RUN apk add --update --no-cache \
 # Install node_modules with yarn
 COPY package.json yarn.lock /tmp/
 RUN cd $INSTALL_PATH \
-  && git submodule init \
-  && git submodule update
+  && git submodule update --init
 RUN cd /tmp && yarn install --frozen-lockfile --ignore-optional \
   && mkdir -p $INSTALL_PATH \
   && cd $INSTALL_PATH \
