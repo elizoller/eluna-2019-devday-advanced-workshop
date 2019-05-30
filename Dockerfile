@@ -27,6 +27,10 @@ WORKDIR $INSTALL_PATH
 # Installs packages for any subdirectories
 COPY package.json yarn.lock lerna.json ./
 COPY ./primo-explore ./primo-explore
+# RUN git submodule update --init
+RUN pwd
+RUN ls -alh
+# RUN rm -rf ./primo-explore/custom/01ASU
 # RUN git clone https://ezoller@bitbucket.org/asulibraries/asu-primo.git ./primo-explore/custom/01ASU
 RUN yarn lerna bootstrap
 
