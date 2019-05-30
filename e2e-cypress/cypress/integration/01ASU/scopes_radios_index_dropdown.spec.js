@@ -28,6 +28,7 @@ describe('asu customizations', () => {
     it(`should actually change the scope when you click a radio button`, () => {
       cy.get('#searchBar')
         .type('science{enter}')
+      cy.get('#facets').click({force: true});
       scope_options.forEach(({ svalue, urlp }, idx) => {
         cy.get('md-radio-button[value="' + svalue + '"]').click().then($el => {
           cy.url().should('include', urlp)

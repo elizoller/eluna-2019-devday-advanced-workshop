@@ -25,6 +25,6 @@
     "@orbis-cascade/primo-explore-custom-actions": "^3.1.1",
     "jquery": "^3.4.1",
     "primo-explore-browzine": "github:asulibraries/browzine",
-    "primo-explore-unpaywall": "./packages/unpaywall"
+    "primo-explore-unpaywall": "^1.2.1"
   }
 }

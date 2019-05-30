@@ -6,16 +6,15 @@ describe('asu customizations', () => {
         }
       });
     })
-    
+
     describe('clickable logo', () => {
       it(`should render the logo and be clickable`, () => {
-            cy.get('prm-logo-after').should('exist');
-            cy.get('prm-logo-after .logo-image').should('exist');
-            cy.get("prm-logo-after #banner a").should('have.attr', 'href').and('equal', 'https://lib.asu.edu/');
-            // don't need to actually click
+        cy.get('prm-logo-after').should('exist', { timeout: 10000 });
+        cy.get('prm-logo-after .logo-image').should('exist');
+        cy.get("prm-logo-after #banner a").should('have.attr', 'href').and('equal', 'https://lib.asu.edu/');
+        // don't need to actually click
       });
     });
-  
-  
+
+
   })
-  
