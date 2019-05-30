@@ -1,0 +1,38 @@
+/* Add info text to 'Expand My Results' filter */
+/* md-checkbox[ng-model="$ctrl.pcAvailability"] {
+margin-bottom: 25px;
+white-space: pre;
+width: 200px;
+}
+md-checkbox[ng-model="$ctrl.pcAvailability"]::before {
+content: '';
+background: url(https://image.flaticon.com/icons/svg/149/149150.svg) no-repeat;
+position: absolute;
+left: 150px;
+height: 16px;
+width: 33px;
+}
+md-checkbox[ng-model="$ctrl.pcAvailability"]:hover::after,
+md-checkbox[ng-model="$ctrl.pcAvailability"]:focus::after {
+position: absolute;
+display: block;
+top: 25px;
+left: 0;
+width: 200px;
+white-space: pre;
+word-wrap: break-word;
+content: "The expand option shows results \Athat are beyond ASU's collections.";
+} */
+
+md-tooltip{
+height: auto !important;
+}
+md-tooltip ._md-content {
+  word-wrap: break-word;
+  width: 210px;
+  white-space: normal;
+  height: auto !important;
+  background-color: rgba(0,0,0,.80);
+  font-size: 14px;
+  padding: 8px;
+}

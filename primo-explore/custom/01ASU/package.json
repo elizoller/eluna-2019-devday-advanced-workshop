@@ -1,0 +1,30 @@
+{
+  "name": "asu-primo",
+  "version": "1.1.31",
+  "description": "Primo customizations for Arizona State University Library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arizona State University Library",
+  "contributors": [
+    "Debbie Flitner <Debbie.Flitner@asu.edu>",
+    "Mark McCann <Mark.McCann@asu.edu>",
+    "Tammy Wolf <Tammy.Allgood@asu.edu>",
+    "Eli Zoller <Eli.Zoller@asu.edu>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/asulibraries/asu_primo.git"
+  },
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/asulibraries/asu_primo#readme",
+  "devDependencies": {
+    "primo-explore-hathitrust-availability": "^2.3.0"
+  },
+  "dependencies": {
+    "@orbis-cascade/primo-explore-custom-actions": "^3.1.1",
+    "jquery": "^3.4.1",
+    "primo-explore-browzine": "github:asulibraries/browzine",
+    "primo-explore-unpaywall": "file:../../../../primo-explore-bu/packages/unpaywall"
+  }
+}
