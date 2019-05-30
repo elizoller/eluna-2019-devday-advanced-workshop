@@ -1,5 +1,7 @@
 FROM node:8.16.0-alpine
 
+ENV VIEW 01ASU
+
 ENV INSTALL_PATH /app
 
 ENV VIEW 01ASU
