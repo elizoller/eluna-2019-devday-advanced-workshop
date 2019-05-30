@@ -16,8 +16,6 @@ RUN apk add --update --no-cache \
 
 # Install node_modules with yarn
 COPY package.json yarn.lock /tmp/
-RUN cd $INSTALL_PATH \
-  && git submodule update --init
 RUN cd /tmp && yarn install --frozen-lockfile --ignore-optional \
   && mkdir -p $INSTALL_PATH \
   && cd $INSTALL_PATH \
@@ -29,6 +27,7 @@ WORKDIR $INSTALL_PATH
 # Installs packages for any subdirectories
 COPY package.json yarn.lock lerna.json ./
 COPY ./primo-explore ./primo-explore
+# RUN git clone https://ezoller@bitbucket.org/asulibraries/asu-primo.git ./primo-explore/custom/01ASU
 RUN yarn lerna bootstrap
 
 COPY . .
