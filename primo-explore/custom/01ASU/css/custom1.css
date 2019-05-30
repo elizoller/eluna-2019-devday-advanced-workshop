@@ -1,0 +1,730 @@
+prm-citation-linker-after p {
+  color: #8C1D40 /*#a30046*/;
+}
+
+/* Add info text to 'Expand My Results' filter */
+/* md-checkbox[ng-model="$ctrl.pcAvailability"] {
+margin-bottom: 25px;
+white-space: pre;
+width: 200px;
+}
+md-checkbox[ng-model="$ctrl.pcAvailability"]::before {
+content: '';
+background: url(https://image.flaticon.com/icons/svg/149/149150.svg) no-repeat;
+position: absolute;
+left: 150px;
+height: 16px;
+width: 33px;
+}
+md-checkbox[ng-model="$ctrl.pcAvailability"]:hover::after,
+md-checkbox[ng-model="$ctrl.pcAvailability"]:focus::after {
+position: absolute;
+display: block;
+top: 25px;
+left: 0;
+width: 200px;
+white-space: pre;
+word-wrap: break-word;
+content: "The expand option shows results \Athat are beyond ASU's collections.";
+} */
+
+md-tooltip{
+height: auto !important;
+}
+md-tooltip ._md-content {
+  word-wrap: break-word;
+  width: 210px;
+  white-space: normal;
+  height: auto !important;
+  background-color: rgba(0,0,0,.80);
+  font-size: 14px;
+  padding: 8px;
+}
+
+button.libchat_offline,.libchat_online {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/* Call the clickable logo */
+prm-logo div.product-logo {
+  display:none;
+}
+prm-logo div.product-logo-local {
+display: flex;
+}
+prm-logo .logo-image, prm-logo img {
+  max-height: 80px;
+}
+
+.layout-align-center-center>*, .layout-align-end-center>*, .layout-align-space-around-center>*, .layout-align-space-between-center>*, .layout-align-start-center>* {
+max-width: initial;
+}
+
+
+/*--------------Search home-----------------*/
+
+#search-home md-card-content img {
+width: 100%;
+border: solid 1px #bababa;
+}
+
+/* full width on smaller devices */
+.__xs .flex-60, .__xs .layout-row>.flex-60,
+.__xs .flex-40, .__xs .layout-row>.flex-40 {
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+max-width: 100%;
+}
+
+/*---------------------Text Styles--------------------*/
+
+/*Links*/
+a, .md-button.arrow-link-button .button-content {
+color: #8C1D40 /*#a30046*/;
+}
+
+
+/*Advanced Text Labels */
+.prm-text, a.a-tag-as-wrapper, .md-button.arrow-link-button .a-tag-as-wrapper.button-content, a.a-tag-as-wrapper:hover, .recommendations-title:hover > span > span.a-tag-as-wrapper, .recommendations-title.hover > span > span.a-tag-as-wrapper, a.a-tag-as-wrapper:focus, .hack-a-tag-unclickable a, .hack-a-tag-unclickable .md-button.arrow-link-button .button-content, .md-button.arrow-link-button .hack-a-tag-unclickable .button-content, prm-search-bar, md-input-container.static-select.md-input-has-value label,
+md-input-container.static-select.md-input-has-value label:not(.md-no-float), .presentable-disabled-inputs md-input-container label, md-toolbar.transparent-toolbar,
+md-toolbar.md-primoExplore-theme.transparent-toolbar,
+md-toolbar.transparent-toolbar:not(.md-menu-toolbar), md-toolbar.default-toolbar,
+md-toolbar.md-primoExplore-theme.default-toolbar,
+md-toolbar.default-toolbar:not(.md-menu-toolbar) {
+color: #8C1D40 /*#a30046*/; }
+
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {background-color: #fff; }
+
+prm-topbar { height: 70px; }
+
+prm-main-menu[menu-type=menu] .md-button {
+font-size: .85em;
+}
+
+/*-----User Area -------*/
+
+/*UserName Guest */
+
+prm-user-area .user-menu-button .user-name {
+  text-transform: none;
+  font-weight: 600;
+  color: #8C1D40 /*#a30046*/;
+  text-align: left;
+  max-width: 80px;
+}
+
+/*Background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+  background-color: #fff;
+}
+
+/* add default background to "back to top" icon */
+prm-search-bookmark-filter #back-to-top-button {
+background-color: #fff;
+}
+
+/*Hover */
+
+/*NAV BAR REGULAR Button Hover */
+prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+    color: #fff !important;
+    background-color: #8C1D40 /*#a30046*/ !important;
+    box-shadow: none;
+}
+
+prm-user-area .user-menu-button:focus .user-name,
+prm-user-area .user-menu-button:hover .user-name  {
+    color: #fff;
+}
+
+/*!!!!!!!  TOPBAR - USER AREA - HOVER COLOR !!!!!!!!*/
+md-fab-toolbar md-toolbar {
+    background-color: #fff !important;
+    pointer-events: none;
+    z-index: 23;
+}
+/*Top Bar - User Area - Button Link Color - On Hover */
+
+/*Language Button Hover */
+
+prm-topbar .md-button {
+color: #000 !important;
+text-transform: none;
+height: 100%;
+border-radius: 0;
+margin: 0;
+}
+
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+  color: #8C1D40 /*#a30046*/;
+  height: 100%;
+}
+
+/*User Area - Hover - Button Color - My Library Card */
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+  color: #8C1D40 /*#a30046*/;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+    color: #8C1D40 /*#a30046*/;
+}
+/*User Area - Hover - Button on Hover Color - My Library Card*/
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+  background-color: #fff;
+  color: #8C1D40 /*#a30046*/;
+  box-shadow: none!important;
+}
+
+/* User area -Account details */
+
+/* hide personal details tab and content container (just in case) */
+md-tab-item[aria-controls="tab-content-17"],
+md-tab-content#tab-content-17,
+span[translate="nui.details.header"],
+prm-personal-info {
+display: none;
+}
+
+
+/* Main menu overlay - expanded menu */
+
+.overlay-menu-content {
+background: rgba(0,0,0,.37) !important; /* this doubles the current bg opacity. Can't seem to change it directly */
+}
+
+prm-main-menu[menu-type=full] md-card .md-headline {
+color: #fff;
+}
+
+/*--------Search Color Changes-----------*/
+
+/*Search Options Background */
+prm-search-bar .prm-top-bar-container .search-element .search-options {background-color:#8C1D40 /*#a30046*/;}
+
+/*Search Options Hover Background */
+prm-search-bar .prm-top-bar-container .search-element .search-options:hover {
+    background-color: #fff;
+    color: #8C1D40 /*#a30046*/ !important;
+}
+/*Search Bar Container */
+md-toolbar.dark-toolbar, md-toolbar.md-primoExplore-theme.dark-toolbar, md-toolbar:not(.md-menu-toolbar).dark-toolbar {
+    background-color: #8C1D40 /*#a30046*/;
+    color: #fff;
+    border-top: 1px solid #8C1D40 /*#a30046*/;
+}
+
+/*Search Bar Wrapper */
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar {
+color: #8C1D40 /*#a30046*/;background-color:#2a2a2a; }
+
+
+.md-button.button-confirm {
+    color: #8C1D40 /*#a30046*/;
+}
+
+/*Magnify Icon */
+.md-button:hover:not([disabled]), .md-button:focus:not([disabled]), .md-button.hove#8C1D40 /*#a30046*/:not([disabled]), .md-button.md-focused:not([disabled]), .md-button._md-focused:not([disabled]) {
+    color: #8C1D40 /*#a30046*/;
+    background-color: #fff;
+}
+
+/*Magnify Icon - Hover */
+.md-button.button-confirm:hover:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm._md-focused:not([disabled]) {
+    color: #fff;
+    background-color: #8C1D40 /*#a30046*/;
+}
+/*Search Bar */
+prm-search-bar .prm-top-bar-container .search-element .search-input-container {
+    font-size: 1.6em;
+    background-color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 2 0 auto;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
+    position: relative;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: auto;
+    color: #8C1D40 /*#a30046*/;
+}
+
+prm-search-bar .prm-top-bar-container .search-element .search-input-container md-autocomplete-wrap input+button {
+    color: #8C1D40 /*#a30046*/;
+}
+
+
+/*Search Bar Color on Hover | Active */
+  prm-search-bar .prm-top-bar-container .search-element .search-input-container md-autocomplete-wrap input:hover {
+    background-color: #fff;
+}
+
+/*Advanced Search Bar */
+
+prm-search-bar .advanced-search-backdrop {
+  background-color: #2a2a2a;
+
+}
+prm-search-bar .advanced-search-tabs {
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 0 #f1f1f1;
+}
+
+/*---------Advanced Search Link ------------*/
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+  color: #fff;
+}
+
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple {
+  color: #fff;
+}
+
+.md-input-color-underline, .new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container.empty-select-on-init:not(.md-input-focused) .md-input-container-dummy>.md-select-dummy md-select-value:after, md-input-container.empty-select-on-init:not(.md-input-focused) md-select md-select-value:after, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar, prm-tags-list .md-chips ._md-chip-input-container:after, prm-tags-list .md-chips .md-chip-input-container:after, prm-tags-list md-chips ._md-chip-input-container:after, prm-tags-list md-chips .md-chip-input-container:after  {
+background-color: #528216;
+}
+
+
+.md-button.button-notice {
+color: #b85b24;
+}
+
+.md-button.md-primary {
+color: #528216;
+}
+
+/* first element is auto-focused when opening the brief bib. I can't figure out how to stop it but now it at least matches the others */
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.md-focused:not([disabled]) {
+color: rgba(58,58,58,.8);
+background: none;
+}
+
+.md-button.md-primary.hovered:not([disabled])  {
+color: #0077a2;
+background-color: rgba(92,146,189,.1);
+}
+
+/* not sure what else this affects - make export bibtex/first Send to link in full display match the others */
+.md-button.md-primary:focus:not([disabled]), .md-button.md-primary:hover:not([disabled]) {
+color: #080606;
+background-color: rgba(58,58,58,.1);
+}
+
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), prm-advanced-search .md-button.md-primary:focus:not([disabled]), prm-advanced-search .md-button.md-primary:hover:not([disabled]) {
+color: #528216;
+background-color: rgba(92, 189, 99, 0.1);
+}
+
+.md-input-container-dummy>.md-select-dummy:focus .md-select-value, .md-input-focused .md-input-container-dummy>.md-select-dummy .md-select-value, .md-input-focused md-select .md-select-value, .md-input-focused md-select:not([disabled]) .md-select-value, .prm-secondary-border.prm-hue1, md-radio-button.md-checked ._md-off, md-radio-button.md-checked .md-off, md-select:focus .md-select-value, md-select:not([disabled]):focus .md-select-value {
+border-color: #528216;
+}
+
+/* Journal Search and Browse pages */
+prm-journals-search-bar,
+prm-browse-search-bar {
+background-color: #2a2a2a;
+}
+
+.classic-input .search-scope {
+border-color: #ffc627;
+background-color: #ffc627;
+}
+
+prm-alphabet-toolbar .md-button.active, prm-alphabet-toolbar .md-button.active.md-focused, prm-alphabet-toolbar .md-button.active:focus, prm-alphabet-toolbar .md-button.active:hover {
+color: #000;
+background: #ffc627;
+}
+
+
+/*Advanced Text Labels */
+.prm-text, a.a-tag-as-wrapper, .md-button.arrow-link-button .a-tag-as-wrapper.button-content, a.a-tag-as-wrapper:hover, .recommendations-title:hover > span > span.a-tag-as-wrapper, .recommendations-title.hover > span > span.a-tag-as-wrapper, a.a-tag-as-wrapper:focus, .hack-a-tag-unclickable a, .hack-a-tag-unclickable .md-button.arrow-link-button .button-content, .md-button.arrow-link-button .hack-a-tag-unclickable .button-content, prm-search-bar, md-input-container.static-select.md-input-has-value label,
+md-input-container.static-select.md-input-has-value label:not(.md-no-float), .presentable-disabled-inputs md-input-container label, md-toolbar.transparent-toolbar,
+md-toolbar.md-primoExplore-theme.transparent-toolbar,
+md-toolbar.transparent-toolbar:not(.md-menu-toolbar), md-toolbar.default-toolbar,
+md-toolbar.md-primoExplore-theme.default-toolbar,
+md-toolbar.default-toolbar:not(.md-menu-toolbar) {
+color: #2a2a2a; }
+
+/* Search results - brief item view */
+
+.result-item-text .media-content-type {
+margin-bottom: 5px;
+}
+
+prm-brief-result .item-title {
+line-height: 1.4em;
+}
+
+/* grabbing everything but really need a:hover -- this could be a big mistake :) */
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-hover.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+color: #8c1d40;
+}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+background-color: rgba(58,58,58,.1);
+}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+box-shadow: inset 0 -1px 0 0 rgba(58,58,58,.5);
+}
+
+/* no box shadow on the logo, thanks */
+.product-logo a {
+box-shadow: none;
+}
+
+/*----------------------Detailed Item -----------------------*/
+
+/*Detailed Items - List View - Background Color */
+
+    .prm-background.prm-hue2, html.prm-hue2, body.prm-hue2, .line-clamp-1:after, .line-clamp-2:after, .line-clamp-3:after, .line-clamp-4:after, .line-clamp-5:after, prm-search-result-list .results-title,
+    prm-search-result-list .results-footer, prm-search-result-list md-list-item, prm-search-bar .simple-search-wrapper .prm-hue2.search-options:after, prm-search-bar .simple-search-wrapper .search-options md-divider.prm-hue2, .prm-full-view-dialog, .full-view-inner-container, .__xs prm-facet.prm-hue2,.__sm prm-facet.prm-hue2, .__sm .prm-hue2.sidebar,
+    .__xs .prm-hue2.sidebar, .__xs prm-full-view-cont .recommendations-wrapper,
+    .__sm prm-full-view-cont .recommendations-wrapper, prm-recomendation-item .media-on-hover .pin-button, prm-recomendation-item .media-on-hover .pin-button:hover, prm-full-view-cont prm-recomendation-item .media-on-hover .prm-hue2.pin-button, .recommendations-title:after, prm-full-view-cont .prm-hue2.recommendations-title:after, .__xs prm-full-view-cont .recommendations-title:after,
+    .__sm prm-full-view-cont .recommendations-title:after, .recommendations-title prm-icon, prm-full-view-cont .recommendations-title prm-icon.prm-hue2, .__xs prm-full-view-cont .recommendations-title prm-icon,
+    .__sm prm-full-view-cont .recommendations-title prm-icon, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider.prm-hue2, md-grid-tile,
+    .tiles-grid-tile, md-grid-tile md-list prm-spinner.overlay-cover:after,
+    md-grid-tile .tile-content prm-spinner.overlay-cover:after,
+    .tiles-grid-tile md-list prm-spinner.overlay-cover:after,
+    .tiles-grid-tile .tile-content prm-spinner.overlay-cover:after, md-card.default-card, md-card .prm-hue2.card-content-block {
+      background-color: #f1f1f1; }
+
+    .full-view-container {background-color: #fff;}
+
+/*Details Tab Link and Icon Color */
+    prm-brief-result .item-title {
+        font-size: 1.18em;
+        line-height: 1.3em;
+        color: #5C92BD;
+        max-width: 75%;
+        margin: 7px 0;
+        margin: 0;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .prm-highlight.prm-hue1, prm-brief-result-container.item-bookmarked, prm-brief-result-container.item-bookmarked:hover {
+      background-color: #FFFC44; }
+
+/*Details Tab Link and Icon Color */
+
+.prm-primary-color, .result-item-actions .custom-button, .result-item-actions .more-options-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
+  color: #8C1D40 /*#a30046*/; }
+
+
+.prm-primary-bg.prm-hue2, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-search-bar.prm-hue2 {
+background-color: #F3F2E9; }
+
+/*Detailed Item - Hover Color - Left Panel */
+  .prm-primary-bg.prm-hue3, prm-spinner.prm-hue3.overlay-cover.light-on-dark:after, prm-search-bar.prm-hue3, md-backdrop.md-opaque {
+    background-color: #cccccc; }
+
+/*Detailed Item - Hover Color - Left Panel - Opacity */
+  md-backdrop.md-opaque {opacity: .75;}
+
+  .prm-primary-border {border-color: #8C1D40 /*#a30046*/; }
+  .prm-primary-border.prm-hue1 {border-color: #8C1D40 /*#a30046*/; }
+  .prm-primary-border.prm-hue2 {border-color: #8C1D40 /*#a30046*/; }
+
+/* Hide Get It tab for electronic materials */
+#getit_link2,
+#services-index button:nth-of-type(6)[aria-label="Get It"],
+#services-index [translate="getit.alma_tab2_norestrict"],
+#services-index [translate="getit.alma_tab2_full"] { display: none; }
+
+/* Hide Tags button */
+#tags,
+#services-index button[aria-label="Tags"],
+#services-index [translate="brief.results.tabs.tags"] {
+display: none;
+}
+
+/*Bookmarks | My Favorites Icon Area TOP BAR */
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
+  color: black; }
+
+
+/*Bookmarks | My Favorites Icon Area Detailed Item Area */
+  .prm-secondary-color.prm-hue1, .result-item-actions .custom-button.pin-button, prm-search-bookmark-filter .prm-hue1.md-button, prm-topbar .prm-hue1.top-nav-bar, prm-recomendation-item .media-on-hover .pin-button {
+    color: #888; }
+
+
+/*Border Area Between Detailed Results and Search Bar - Includes Back to Results Link */
+    .prm-background.prm-hue1, html.prm-hue1, body.prm-hue1, prm-search-bar .simple-search-wrapper .prm-hue1.search-options:after, prm-search-bar .simple-search-wrapper .search-options md-divider.prm-hue1, .full-view-inner-container + .full-view-aside:before, .__xs prm-facet.prm-hue1,
+        .__sm prm-facet.prm-hue1, .__sm .prm-hue1.sidebar,
+        .__xs .prm-hue1.sidebar, prm-full-view-cont prm-recomendation-item .media-on-hover .prm-hue1.pin-button, prm-full-view-cont .prm-hue1.recommendations-title:after, prm-full-view-cont .recommendations-title prm-icon.prm-hue1, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider.prm-hue1, .default-tabs[md-border-bottom] > md-tabs-wrapper, md-card .prm-hue1.card-content-block, md-card .card-divider, md-toolbar.default-toolbar,md-toolbar.md-primoExplore-theme.default-toolbar,md-toolbar.default-toolbar:not(.md-menu-toolbar) {
+          background-color:#fff;
+          border-color: black; }
+
+
+/*Lower Body Background Color */
+.prm-background, html, body, prm-search-bar .simple-search-wrapper .search-options:after, prm-search-bar .simple-search-wrapper .search-options md-divider, .__xs prm-facet,
+.__sm prm-facet, .__sm .sidebar,
+.__xs .sidebar, prm-full-view-cont prm-recomendation-item .media-on-hover .pin-button, prm-full-view-cont .recommendations-title:after, prm-full-view-cont .recommendations-title prm-icon, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider, md-card .card-content-block {background-color: #fff;border-color: #e1e1e1; }
+
+/*-------------------------Facets-----------------------------*/
+
+
+
+/*Facets Link Color */
+
+.section-title prm-icon {
+  color: #8C1D40 /*#a30046*/;
+}
+
+.link-alt-color, .md-button.button-as-link.link-alt-color, .section-title prm-icon {
+  color: #8C1D40 /*#a30046*/;
+}
+
+/* grabbing everything but this is really for .md-button.button-as-link.link-alt-color:hover:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]) */
+.bar prm-authentication .md-button.link-alt-color._md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color.hovered:not([disabled]), .bar prm-authentication .md-button.link-alt-color.md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color:focus:not([disabled]), .bar prm-authentication .md-button.link-alt-color:hover:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button._md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.hovered:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:focus:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:hover:not([disabled]), .md-button.button-as-link.link-alt-color._md-focused:not([disabled]), .md-button.button-as-link.link-alt-color.hovered:not([disabled]), .md-button.button-as-link.link-alt-color.md-focused:not([disabled]), .md-button.button-as-link.link-alt-color:focus:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button._md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.hovered:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:focus:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:hover:not([disabled]), .section-title prm-icon.md-button.button-as-link._md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link.hovered:not([disabled]), .section-title prm-icon.md-button.button-as-link.md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link:focus:not([disabled]), .section-title prm-icon.md-button.button-as-link:hover:not([disabled]) {
+color: #fff;
+background-color: #8c1d40;
+}
+
+
+/*------------------------------------------------------------------*/
+
+/*Highlight - Alert Color */
+.prm-highlight {
+  background-color: #FFFCC4; }
+
+
+/* Media queries */
+
+/* Shrink logo on smaller screens */
+@media only screen and (max-width: 950px) {
+prm-logo .logo-image, prm-logo img {
+width: 180px;
+}
+}
+@media only screen and (max-width: 450px) {
+prm-logo .logo-image, prm-logo img {
+width: 120px;
+}
+}
+
+
+/* Adjustments for no results page cards */
+
+/* Hide out-of-the-box no search results card */
+prm-no-search-result > md-card.default-card {
+  display: none;
+}
+
+prm-no-search-result-after md-card li {
+  padding-bottom: 11px;
+}
+
+prm-no-search-result-after .custom-card .md-headline {
+  font-size: 45px;
+}
+
+/*Alon's fix for popovers in firefox*/
+.animate-popover {
+  clip-path: none !important;
+}
+
+/* Fix to display main menu in services page */
+prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
+  display: inline;
+}
+
+/* For custom info-bar as opposed to alert-bar or success-bar */
+.info-bar {
+    /* background-color: #a1d6a1; */
+    border: 1px solid;
+    border-color: #3a3a3a;/*rgb(225, 225, 225);*/
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 22px;
+    color: #3a3a3a;
+    background-color: transparent; /* #f1f1f1 */
+}
+.info-bar .button-with-icon {
+  float: right;
+  margin-top: -5px;
+  padding-top: 0;
+}
+.info-bar .md-chips .md-chip {
+  background-color: transparent;
+}
+
+/* for reserves banner */
+#reservesBanner .alert-bar {
+  background-color: rgba(0, 163, 224, 20%);
+  border-color: #00A3E0;
+}
+/* Full detail screen close icon */
+button.md-icon-button.close-button.md-button.md-primoExplore-theme.md-ink-ripple {
+background-color: rgba(0,0,0,.5);
+}
+
+/* to resize the up/down arrows in the full record view */
+.prm-full-view-dialog~.close-button md-icon[md-svg-icon="primo-ui:chevron-up"], .prm-full-view-dialog~.close-button md-icon[md-svg-icon="primo-ui:chevron-down"],
+prm-icon[icon-definition="chevron-up"].prm-full-view-dialog~.close-button md-icon , prm-icon[icon-definition="chevron-down"].prm-full-view-dialog~.close-button md-icon {
+  height: 50px;
+  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.prm-full-view-dialog~.close-button.md-icon-button:not([aria-label='Close Full Display']) {
+  height: 66px;
+  width: 66px;
+  min-height: 66px;
+  min-width: 66px;
+}
+
+.prm-full-view-dialog~.close-button.md-icon-button:not([aria-label='Close Full Display']):nth-of-type(1) {
+  transform: translateY(-134%) translateX(22%) !important;
+}
+
+.prm-full-view-dialog~.close-button.md-icon-button:not([aria-label='Close Full Display']):last-of-type {
+  transform: translateY(134%) translateX(22%) !important;
+}
+
+
+
+/* for new search profile radio buttons and index search dropdown */
+#searchProfileRadios {
+  margin-bottom: 10px;
+}
+#searchProfileRadios md-radio-group {
+    padding: 16px;
+}
+#searchProfileRadios span.bold-text {
+  padding: 8px 0px 0px 8px;
+  margin-right: 1.5em;
+}
+#indexSelect {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  #indexSelect {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+/*for lib footers*/
+.lib-footer {
+    background: #000;
+    padding: 20px;
+}
+
+.lib-footer a {
+    color: #ccc;
+    border-bottom: 1px dotted #ccc;
+    text-decoration: none;
+}
+
+.lib-footer h4 {
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.lib-footer a.icon {
+    border-bottom: none;
+}
+
+.lib-footer .fa-icon {
+    margin: 4px;
+    height: 35px;
+}
+
+.lib-footer .fdlp {
+    padding-top: 15px;
+}
+/*end lib-footers*/
+
+/*start asu-footers*/
+#innovation-bar {
+    background-color: #FFC627;
+    height: 50px;
+}
+
+#innovation-bar a {
+    border-bottom: 0;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#innovation-bar a:hover {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+#innovation-bar img {
+    margin-top: -1em;
+    height: 121px;
+}
+
+#innovation-bar .innovation-status {
+    margin-top: 8px;
+}
+
+#innovation-footer .footer-menu {
+    background-color: #e5e5e5;
+}
+
+#innovation-footer .footer-menu a {
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: none;
+    margin: 15px;
+}
+/*end asu-footer*/
+
+button.lib-chat {
+    background-color: #8C1D40;
+    color: #FFFFFF;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* If width <= 680 && width >= 600, hide Chat button.  Yes, this isn't
+  ideal, but it solves the problem of the Chat button hiding the Sign in
+  button fo for those particular screen widths.  This is probably ok, since
+  it is unlikely anybody would want to use Chat on such a small screen
+  (likely mobile) since the chat screen would take over their entire screen.
+*/
+
+@media (min-width: 600px) and (max-width: 680px) 
+{
+  button.lib-chat {
+    display: none;
+  }
+}
+
+div[ng-if*='External Search'] div.md-chip-content.layout-row {
+  padding-left: 2.4em !important;
+}
+
+span.umnHathiTrustLink {
+  margin-left: -5px;
+}
+
+span.umnHathiTrustLink md-icon svg {
+  height: 1.2em;
+  filter: grayscale(100%);
+}
+
+span.umnHathiTrustLink:hover md-icon svg {
+  filter: grayscale(0%);
+}
