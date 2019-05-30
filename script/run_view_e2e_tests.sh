@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 mkdir -p cypress-results
-VIEWS='01ASU'
+VIEWS='NYU 01ASU'
 docker ps
 
 for VIEW in $VIEWS
